@@ -1,5 +1,5 @@
 import React from "react";
-import { View,Text,StyleSheet,TextInput, TouchableOpacity } from "react-native";
+import { View,Text,StyleSheet,TextInput, TouchableOpacity, KeyboardAvoidingView, Platform } from "react-native";
  
 
 function Task(props){
@@ -12,6 +12,13 @@ function Task(props){
             <View style={styles.circular}>
 
             </View>
+
+<KeyboardAvoidingView
+behavior={Platform.OS==='ios'?'padding':'height'}
+style={styles.writeTaskWrapper}>
+    
+</KeyboardAvoidingView>
+
 
         </View>
     )
