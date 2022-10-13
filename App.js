@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View,KeyboardAvoidingView,TextInput, TouchableOpacity } from 'react-native';
-import React from 'react'
+import React,{useState} from 'react'
 import Task from './components/task';
 
 export default function App() {
@@ -53,7 +53,7 @@ writeTaskWrapper:{
   position:"absolute",
   bottom:60,
   flexDirection:'row',
-  justifyContent:'space-between',
+  justifyContent:'space-around',
   alignItems:'center',
   width:'100%',
   
@@ -62,11 +62,24 @@ writeTaskWrapper:{
 input:{
   paddingVertical:15,
   paddingHorizontal:15,
-  width:250,
   backgroundColor:'#fff',
   borderRadius:60,
+  borderColor:'#2bd9d9',
+  borderWidth:1,
+  width:250,
+
 },
-addWrapper:{},
-addText:{},
+addWrapper:{
+  width:60,
+  height: 60,
+  justifyContent:'center',
+  alignItems:'center',
+  backgroundColor:'#fff',
+  borderRadius: 60,borderColor:'#2bd9d9',
+  borderWidth:1,
+},
+addText:{
+
+},
   
 });
