@@ -3,6 +3,7 @@ import { StyleSheet, Text, View,KeyboardAvoidingView,TextInput, TouchableOpacity
 import React,{useState} from 'react';
 import Task from './components/task';
 
+
 export default function App() {
   const [task,setTask]=useState();
   const [taskItems,setTaskItems]=useState([])
@@ -17,8 +18,10 @@ export default function App() {
    setTaskItems(itemsCopy);
   }
   return (
+   
     <View style={styles.container}>
       <View style={styles.taskWrap}> 
+      
       <Text style={styles.sectionTitle}>Today's Task</Text>
       <View style={styles.item}>
         {
